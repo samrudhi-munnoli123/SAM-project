@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Food Delivery</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #f56c42;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .back-btn,
+        .profile-btn {
+            font-size: 24px;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Search Bar */
+        .search-section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar {
+            width: 80%;
+            padding: 12px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar:focus {
+            border-color: #f56c42;
+            outline: none;
+            transform: scale(1.05);
+        }
+
+        /* Categories */
+        .categories {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            overflow-x: scroll;
+        }
+
+        .category-card {
+            background-color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            min-width: 120px;
+            margin-right: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Featured Dishes */
+        .featured-dishes {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .featured-dishes h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .dish-card {
+            display: inline-block;
+            width: 300px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .dish-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .dish-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .dish-info {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .dish-info h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .dish-info p {
+            color: #f56c42;
+            font-size: 16px;
+        }
+
+        .order-btn {
+            background-color: #f56c42;
+            color: white;
+            padding: 10px;
+            border-radius: 30px;
+            width: 100%;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background-color: #e84c36;
+        }
+
+        /* Cart Preview */
+        .cart-preview {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f56c42;
+            border-radius: 50%;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cart-btn {
+            color: white;
+            font-size: 20px;
+        }
+
+        .cart-preview:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container" onclick="reloadPage()">
+            <button class="back-btn">←</button>
+            <div class="logo">Foodie</div>
+            <button class="profile-btn">👤</button>
+        </div>
+    </header>
+
+    <!-- Search Bar Section -->
+    <section class="search-section">
+        <form action="/menu" method="GET" style="width: 80%;">
+            <input type="text" name="search" placeholder="Search your favorite food..." class="search-bar"
+                id="searchInput">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="category-card" onclick="setSearchValue('Pizza')">🍕 Pizza</div>
+        <div class="category-card" onclick="setSearchValue('Burger')">🍔 Burgers</div>
+        <div class="category-card" onclick="setSearchValue('Sushi')">🍣 Sushi</div>
+        <div class="category-card" onclick="setSearchValue('Salad')">🥗 Salads</div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured-dishes">
+        <h2>Featured Dishes</h2>
+
+
+        <% for (let i of data){ %>
+
+            <div class="dish-card">
+                <img src="<%= i.image_url %>" alt="Dish" class="dish-img">
+                <div class="dish-info">
+                    <h3>
+                        <%= i.name %>
+                    </h3>
+                    <p>
+                        <%= i.price %>
+                    </p>
+                    <h5>
+                        <%= i.description %>
+                    </h5>
+                    <a href=<%= /order/ +  i.id %>><button class="order-btn">Order Now</button></a>
+                </div>
+
+
+
+
+            </div>
+
+            <% } %>
+
+    </section>
+
+    <!-- Cart Preview -->
+    <div class="cart-preview">
+        <button class="cart-btn">🛒 Cart (2)</button>
+    </div>
+
+
+
+    <script>
+        // Function to set search value when a category is clicked
+        function setSearchValue(category) {
+            // Set the value of the input to the selected category
+            document.getElementById('searchInput').value = category;
+
+            // Submit the form automatically when a category is selected
+            document.querySelector('form').submit();
+        }
+
+
+
+
+        // Function to reload the page
+        function reloadPage() {
+            setTimeout(function () {
+                location.reload(); // This reloads the current page
+            }, 100); // Adding a small delay to ensure the form submission happens before the reload
+        }
+    </script>
+
+
+</body>

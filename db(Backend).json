@@ -1,0 +1,160 @@
+{
+    "food":[
+        {
+            "name": "Pizza Margherita",
+            "description": "A classic pizza with fresh mozzarella, tomato sauce, and basil.",
+            "category": "Pizza",
+            "price": 12.99,
+            "image_url": "https://cdn.shopify.com/s/files/1/0274/9503/9079/files/20220211142754-margherita-9920_5a73220e-4a1a-4d33-b38f-26e98e3cd986.jpg?v=1723650067"
+        },
+        {
+            "name": "Classic Burger",
+            "description": "A juicy beef patty with lettuce, tomato, cheese, and a soft bun.",
+            "category": "Burger",
+            "price": 8.99,
+            "image_url": "https://thespiceway.com/cdn/shop/files/Signature_Savory_Classic_Burger.jpg?v=1712161801"
+        },
+        {
+            "name": "Veggie Sushi",
+            "description": "Fresh vegetables wrapped in sushi rice and seaweed.",
+            "category": "Sushi",
+            "price": 10.50,
+            "image_url": "https://www.allrecipes.com/thmb/i7yLualeJp6h7nuux-Dnr7AUI6o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4559474-vegetarian-sushi-Buckwheat-Queen-4x3-1-af11cac7218240e383dbe72ef6b1ec8f.jpg"
+        },
+        {
+            "name": "Caesar Salad",
+            "description": "Crisp romaine lettuce with creamy Caesar dressing and croutons.",
+            "category": "Salad",
+            "price": 7.99,
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG8Aq5vkOUaDVa05Sir-_xCpCczB41LrZm2g&s"
+        },
+        {
+            "name": "Spaghetti Bolognese",
+            "description": "Traditional Italian pasta with a rich, hearty meat sauce.",
+            "category": "Pizza",
+            "price": 14.99,
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTba_u7jPyLwM3wGF0NOdA-HlxPBjXMhNrExg&s"
+        },
+        {
+            "name": "Margarita Pizza",
+            "description": "A simple pizza topped with mozzarella, tomato sauce, and fresh basil.",
+            "category": "Pizza",
+            "price": 11.99,
+            "image_url": "https://i.ytimg.com/vi/vafnnbFih3w/maxresdefault.jpg"
+        },
+        {
+            "name": "Cheeseburger",
+            "description": "A classic cheeseburger with cheddar cheese, lettuce, tomato, and pickles.",
+            "category": "Burger",
+            "price": 9.49,
+            "image_url": "https://www.oliveandmango.com/images/uploads/2021_06_21_classic_grilled_cheeseburger_2.jpg"
+        },
+        {
+            "name": "Sushi Rolls Combo",
+            "description": "A combo platter with a variety of sushi rolls including tuna, salmon, and avocado.",
+            "category": "Sushi",
+            "price": 16.99,
+            "image_url": "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/iouzpvrq/6e90e19d-2637-4b00-a710-fa8d789ad98c"
+        },
+        {
+            "name": "BBQ Chicken Burger",
+            "description": "Grilled chicken with BBQ sauce, lettuce, and onions in a soft bun.",
+            "category": "Burger",
+            "price": 10.49,
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7-db01_i0tNJ49hQt3jbfcYjw0HGTSxrsyA&s"
+        },
+        {
+            "name": "Hawaiian Pizza",
+            "description": "A pizza with pineapple, ham, and mozzarella cheese.",
+            "category": "Pizza",
+            "price": 13.49,
+            "image_url": "https://cdn.tasteatlas.com/Images/Dishes/28e531e184ff4e7eb15f7760f11beed7.jpg"
+        },
+        {
+            "name": "California Rolls",
+            "description": "A sushi roll filled with crab, avocado, and cucumber.",
+            "category": "Sushi",
+            "price": 11.99,
+            "image_url": "https://www.allrecipes.com/thmb/PujANugNXQW7ugnivQt8b4_-13k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RM-169856-CreamCheeseandCrabSushiRolls-ddmfs-3x4-6421-8d233e210db3458f8574bafad1c69e70.jpg"
+        },
+        {
+            "name": "Fish Burger",
+            "description": "Crispy battered fish fillet with lettuce and tartar sauce on a bun.",
+            "category": "Burger",
+            "price": 9.99,
+            "image_url": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/c95107d7a1a8c5b87530e0c048be30d6/Derivates/873a0fb5e25b3fc5021470d27a9cb2284f7d0f40.jpg"
+        },
+        {
+            "name": "Pepperoni Pizza",
+            "description": "A pizza topped with pepperoni, mozzarella, and tomato sauce.",
+            "category": "Pizza",
+            "price": 13.99,
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkb8bnpzQOP0j7G7CFRtJgdI1K2cIVbV-aZQ&s"
+        },
+        {
+            "name": "Tuna Sushi",
+            "description": "Fresh tuna slices on top of sushi rice, wrapped in seaweed.",
+            "category": "Sushi",
+            "price": 12.50,
+            "image_url": "https://res.cloudinary.com/hz3gmuqw6/image/upload/v1637267741/recipes/DSCF1821_6196b91c23f3d.jpg"
+        },
+        {
+            "name": "Chicken Avocado Burger",
+            "description": "Grilled chicken breast with fresh avocado, lettuce, and tomato.",
+            "category": "Burger",
+            "price": 10.99,
+            "image_url": "https://www.woolworths.co.nz/Content/Recipes/chickenburgeravocadobacon_540x380.jpg"
+        },
+        {
+            "name": "Vegetarian Pizza",
+            "description": "A pizza with a mix of fresh vegetables like bell peppers, olives, onions, and mushrooms.",
+            "category": "Pizza",
+            "price": 12.49,
+            "image_url": "https://www.noracooks.com/wp-content/uploads/2020/07/sq.jpg"
+        },
+        {
+            "name": "Ebi Nigiri",
+            "description": "Shrimp nigiri served on top of seasoned rice, wrapped with a thin strip of seaweed.",
+            "category": "Sushi",
+            "price": 9.99,
+            "image_url": "https://media02.stockfood.com/largepreviews/NjA4NjI2MQ==/00196331-Ebi-nigiri-shrimp-ika-nigiri-cuttlefish-saba-nigiri-fish.jpg"
+        },
+        {
+            "name": "Bacon Cheeseburger",
+            "description": "Beef patty with crispy bacon, cheddar cheese, lettuce, tomato, and pickles.",
+            "category": "Burger",
+            "price": 11.49,
+            "image_url": "https://i.redd.it/t5pnwvn5itg31.jpg"
+        },
+        {
+            "name": "Margherita Pizza",
+            "description": "Fresh mozzarella, basil, and tomato sauce on a thin crust pizza.",
+            "category": "Pizza",
+            "price": 10.99,
+            "image_url": "https://cdn.shopify.com/s/files/1/0274/9503/9079/files/20220211142754-margherita-9920_5a73220e-4a1a-4d33-b38f-26e98e3cd986.jpg?v=1723650067"
+        },
+        {
+            "name": "Salmon Sushi Rolls",
+            "description": "Fresh salmon rolled with cucumber and avocado in sushi rice.",
+            "category": "Sushi",
+            "price": 14.99,
+            "image_url": "https://fresh.co.nz/wp-content/uploads/2020/04/Salmon-Avocado-Sushi-3-Ways_LR_Hero2-e1588109308180.jpg"
+        },
+        {
+            "name": "Garden Salad",
+            "description": "A fresh mix of lettuce, cucumber, tomatoes, and carrots.",
+            "category": "Salad",
+            "price": 6.99,
+            "image_url": "https://thetoastykitchen.com/wp-content/uploads/2024/01/garden-salad-ingredients-in-serving-bowl-500x500.jpg"
+        },
+        {
+            "name": "Mushroom Burger",
+            "description": "Juicy beef patty with grilled mushrooms, Swiss cheese, and garlic mayo.",
+            "category": "Burger",
+            "price": 11.99,
+            "image_url": "https://cdn.prod.website-files.com/65d20a9351c83b698cdf0df9/677f1770964c906f613cb3be_66660d05929a221156a892c6_oyster-mushroom-burger-2.webp"
+        }
+    ]
+    
+    
+}

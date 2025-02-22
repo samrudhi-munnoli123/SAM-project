@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Payment</title>
+   <style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.payment-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    color: #333;
+}
+
+.food-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.food-details img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.food-details h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price {
+    color: #28a745;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.qr-section {
+    margin-top: 15px;
+}
+
+.qr-section img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+   </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Complete Your Payment</h2>
+        
+        <div class="food-details">
+            <img src=<%= data.image_url %> alt="Food Image">
+            <div>
+                <h3><%= data.name  %></h3>
+                <p class="price">Price: ₹<%= data.price %></p>
+            </div>
+        </div>
+
+        <div class="qr-section">
+            <p>Scan the QR Code to Pay</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=yourupiid@upi&pn=FoodPayment" alt="QR Code">
+        </div>
+
+        <button onclick="makePayment()">Make Payment</button>
+    </div>
+
+    <script>
+        function makePayment() {
+            alert("Payment Successful! Thank you for your order. 🍔✅");
+        }
+    </script>
+</body>
+</html>
